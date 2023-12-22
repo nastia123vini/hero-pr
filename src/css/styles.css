@@ -1,0 +1,76 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./variables.css');
+@import url('./base.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about-us.css');
+@import url('./our-yachts.css');
+@import url('./advantages.css');
+@import url('./rent-a-yacht.css');
+@import url('./reviews.css');
+@import url('./footer.css');
+@import url('./modal.css');
+
+
+/* ========== TABLET STYLES ========== */
+
+hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-tab.jpg);
+}
+
+@media screen and (min-resolution:192dpi) and (min-width: 768px),
+screen and (min-resolution:2dppx) and (min-width: 768px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero {
+    background-image:
+      linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-tab@2x.jpg);
+  }
+}
+
+.hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  margin-bottom: 36px;
+}
+
+.hero-btn {
+  margin-bottom: 40px;
+}
+
+/* ========== DESCTOP STYLES ========== */
+
+.hero {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: linear-gradient(to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office1.jpg);
+}
+
+@media screen and (min-resolution:192dpi) and (min-width: 1158px),
+screen and (min-resolution:2dppx) and (min-width: 1158px),
+screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .hero {
+    background-image:
+      linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office@2x.jpg);
+  }
+}
